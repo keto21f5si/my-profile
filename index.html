@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="keto's official profile site.">
+    <meta name="keywords" content="keto21,keto,KETO21,KETO,keto21f5si">
+    <meta name="author" content="keto">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Ar-U6JNbcoH49_c-X5R7LR2N69nug_r32dcZOyqYM_s">
+    <meta property="og:url" content="https://keto21.f5.si/">
+    <meta property="og:title" content="HOME / keto">
+    <meta property="og:description" content="keto’s official profile site.">
+    <meta property="og:site_name" content="HOME / keto">
+    <meta property="og:image" content="./images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="any" href="./images/icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icon.png">
+    <title>HOME / keto (official)</title>
+</head>
+<body id="top">
+    <header>
+        <h1><img src="./images/image.svg" alt="head">HOME / keto</h1>
+    </header>
+    <main>
+        <img src="./images/icon.svg" alt="icon" class="icon">
+        <h2>Welcome to my profile site.</h2>
+        <div class="content">
+            <h3>About me</h3>
+            <p>
+                名前: keto（読み方: けーと）<br>
+                年齢: 15<br>
+                血液型: A型<br>
+                趣味: Webデザイン, Scratch<br>
+                将来の夢: プログラマー
+            </p>
+            <p>
+                Scratchでゲームを作ったり、HTML, CSS, JavaScriptの勉強をしたりしています。<br>
+                今後はC#とBlenderとUnityの勉強もしたいと考えています。
+            </p>
+            <hr><h3>Skill</h3>
+            <div class="skill">
+                <section>
+                    <h3>Scratch</h3>
+                    <p class="bold-text">
+                        Lv. 3/5
+                    </p>
+                    <p>
+                        主にアクションゲームを制作しており、変数の使い方などが理解できています。最近は、3Dレンダリングの基礎について理解することを目標としてます。
+                    </p>
+                </section>
+                <section>
+                    <h3>HTML/CSS</h3>
+                    <p class="bold-text">
+                        Lv. 3/5
+                    </p>
+                    <p>
+                        勉強して身に付けたさまざまなHTML要素やボックスモデル、背景色などの基本的な知識で簡単なWebページを作れるようになりました。（<a href="https://github.com/keto21f5si/my-profile">プロフィールサイト</a>）
+                    </p>
+                </section>
+                <section>
+                    <h3>JavaScript</h3>
+                    <p class="bold-text">
+                        Lv. 3/5
+                    </p>
+                    <p>
+                        変数、条件処理、反復処理、関数など基本的な知識を身につけて<a href="https://github.com/keto21f5si/todolist">ToDoリスト</a>を作りました。Node.jsも少しだけ使えるようになりました。
+                    </p>
+                </section>
+                <section>
+                    <h3>作ったもの: 1</h3>
+                    <p>
+                        <a href="https://github.com/keto21f5si/my-profile">My Profile</a>と<a href="https://github.com/keto21f5si/todolist">ToDoリスト</a><br>
+                        HTML, CSS, JavaScriptの基本的な知識を使って作りました。ToDoリストはデータを保存する機能があるので、実用性はあります。
+                    </p>
+                </section>
+                <section>
+                    <h3>作ったもの: 2</h3>
+                    <p>
+                        <a href="https://github.com/keto21f5si/MyBlog">My Blog</a>
+                        これも同様に、HTML, CSS, JavaScriptの基本的な知識で作りました。Markdownの記事をHTMLに変換して表示しています。
+                    </p>
+                </section>
+                <section>
+                    <h3>作ったもの: 3</h3>
+                    <p>
+                        <a href="https://github.com/keto21f5si/chatroom">ChatRoom</a><br>
+                        Node.jsを使って開発しました。短くコードを組むためにExpress、リアルタイムにするためにSocket.IO、開発しやすくするためにnodemonというパッケージを使いました。
+                    </p>
+                </section>
+            </div>
+            <h3>Links</h3>
+            <ul class="links">
+                <li><a href="#top">Go Top.</a></li>
+                <li><a href="https://ch.keto21.f5.si/">チャットルーム</a></li>
+                <li><a href="https://blog.keto21.f5.si/">ブログ</a></li>
+                <li><a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">もちたろうさんのリクエスト</a></li>
+                <li><a href="line://msg/text/https://keto21.f5.si/">LINEで共有</a></li>
+            </ul>
+            <button type="button" id="copyUrl">Copy URL</button>
+        </div>
+    </main>
+    <footer>
+        <small>
+            <h1><img src="./images/icon.svg" alt="icon">HOME / keto</h1>
+            <p class="link">
+                <strong>[ Follow me ]</strong><br>
+                <a href="https://github.com/keto21f5si/">GitHub</a> , 
+                <a href="https://scratch.mit.edu/users/keto21/">Scratch</a>
+            </p>
+            <hr>
+            Created by keto.<br>
+            Hosted by Cloudflare Pages.<br>
+            All rights reserved.<br>
+            Copyright &copy; keto
+        </small>
+    </footer>
+    <script>
+        const copyUrl = document.querySelector("#copyUrl");
+        copyUrl.addEventListener("click", ()=> {
+            navigator.clipboard.writeText("https://keto21.f5.si/");
+            copyUrl.textContent = "Copied!";
+            setTimeout(()=> {
+                copyUrl.textContent = "Copy URL";
+            }, 1000);
+        });
+    </script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js").then(function(registration) {}, function(err) {});
+            });
+        }
+    </script>
+</body>
+</html>

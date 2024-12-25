@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="keto">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Ar-U6JNbcoH49_c-X5R7LR2N69nug_r32dcZOyqYM_s">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="any" href="./images/icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icon.png">
+    <title>404 Not Found</title>
+</head>
+<body id="top">
+    <header>
+        <h1><img src="./images/image.svg" alt="head">HOME / keto</h1>
+    </header>
+    <main>
+        <img src="./images/icon.svg" alt="icon" class="icon">
+        <h2>Welcome to my profile site.</h2>
+        <div class="content">
+            <h3>404 Page Not Found.</h3>
+            <p>道に迷ったようですね。<br><a href="https://keto21.f5.si/">ホーム</a>に戻ってみてください！</p>
+        </div>
+    </main>
+    <footer>
+        <small>
+            <h1><img src="./images/icon.svg" alt="icon">HOME / keto</h1>
+            <p class="link">
+                <strong>[ Follow me ]</strong><br>
+                <a href="https://github.com/keto21f5si/">GitHub</a> , 
+                <a href="https://scratch.mit.edu/users/keto21/">Scratch</a>
+            </p>
+            <hr>
+            Created by keto.<br>
+            Hosted by Cloudflare Pages.<br>
+            All rights reserved.<br>
+            Copyright &copy; keto
+        </small>
+    </footer>
+    <script>
+        const copyUrl = document.querySelector("#copyUrl");
+        copyUrl.addEventListener("click", ()=> {
+            navigator.clipboard.writeText("https://keto21.f5.si/");
+            copyUrl.textContent = "Copied!";
+            setTimeout(()=> {
+                copyUrl.textContent = "Copy URL";
+            }, 1000);
+        });
+    </script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js").then(function(registration) {}, function(err) {});
+            });
+        }
+    </script>
+</body>
+</html>
