@@ -37,7 +37,7 @@ main {
     padding: 10px;
 }
 .content p, .links {
-    max-width: 300px;
+    max-width: 430px;
     text-align: left;
     margin: auto;
     margin-block: 10px;
