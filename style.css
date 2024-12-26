@@ -82,18 +82,16 @@ main {
     font-weight: 200;
     color: light-dark(#111, #fff);
     background: #0000;
-    border: 1.5px dashed light-dark(#111, #fff);
+    border: 1px solid light-dark(#111, #fff);
     padding: 7px;
     border-radius: 5px;
     transition: .5s;
-    outline: 2px solid #0000;
 }
 #copyUrl:hover {
     border-radius: 28px;
-    background: light-dark(#335, #fff);
+    background: light-dark(#333, #fff);
     color: light-dark(#fff, #111);
     border-color: light-dark(#fff, #111);
-    outline-color: light-dark(#335, #fff);
 }
 
 footer {
