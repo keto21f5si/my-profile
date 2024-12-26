@@ -71,11 +71,10 @@ main {
     min-width: 250px;
     max-width: 400px;
     min-height: 300px;
-    opacity: .8;
     transition: .3s;
 }
 .skill section:hover {
-    opacity: 1;
+    scale: 1.05;
 }
 #copyUrl {
     margin: 20px;
