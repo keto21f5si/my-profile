@@ -57,6 +57,7 @@ main {
     color: #1e1;
 }
 .skill {
+    max-width: 1050px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
