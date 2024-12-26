@@ -87,19 +87,21 @@ main {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
-    transition: all .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     box-shadow:
-        inset -3px -3px 3px #1115,
-        inset 3px 3px 3px #fff5,
-        0 0 10px #07fb
-    ;
+    inset -3px -3px 3px #1115,
+    inset 3px 3px 3px #fff5,
+    0 0 10px #07fb;
+    transition: all .3s;
 }
 #copyUrl:active {
     color: #111;
     box-shadow:
-        inset -3px -3px 3px #1117,
-        inset 3px 3px 3px #1117
-    ;
+    inset -3px -3px 3px #1117,
+    inset 3px 3px 3px #1117;
 }
 
 footer {
