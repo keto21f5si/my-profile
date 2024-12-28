@@ -1,205 +1,137 @@
-@charset "utf-8";
-* {
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
-    scroll-behavior: smooth;
-}
-:root {
-    color-scheme: light dark;
-}
-body {
-    -webkit-text-size-adjust: 100%;
-    font-family: system-ui;
-    overflow-x: hidden;
-    overflow-wrap: anywhere;
-    text-align: center;
-    background: light-dark(#f5f5f5, #111);
-    color: light-dark(#111, #fff);
-    line-height: 1.3;
-}
-
-header {
-    padding: .5rem;
-    background: #333;
-    top: 0;
-    border-radius: 0 0 7px 7px;
-    box-shadow:
-    inset 0 0 5px #000,
-    inset 8px 8px 0 #272727,
-    inset -8px -8px 0 #272727,
-    0 0 10px #000a
-    ;
-}
-header h1 {
-    color: #fff;
-    text-decoration: underline;
-}
-
-main {
-    padding: 50px;
-    margin: auto;
-}
-.content {
-    border-top: 2px solid #888;
-    margin-top: 20px;
-    padding: 10px;
-}
-.content p, .links {
-    max-width: 430px;
-    text-align: left;
-    margin: auto;
-    margin-block: 10px;
-    line-height: 1.7;
-}
-.links {
-    max-width: 250px;
-    padding: 10px;
-    padding-left: 20px;
-    background: light-dark(#333, #222);
-    list-style: none;
-    border-radius: 10px;
-    box-shadow: 2px 3px 10px #1118;
-}
-.links li::before {
-    content: "keto~ $ ";
-    color: #1e1;
-}
-.skill {
-    margin: auto;
-    max-width: 1050px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-.skill section {
-    background: light-dark(#fff, #1f1f1f);
-    box-shadow: 2px 3px 7px #1115;
-    padding: 10px;
-    border-radius: 10px;
-    flex: 1 1 calc((100% / 3) - 40px);
-    min-width: 250px;
-    max-width: 400px;
-    min-height: 300px;
-    transition: .3s;
-}
-.skill section:hover {
-    scale: 1.05;
-}
-#copyUrl {
-    margin: 20px;
-    font-size: 1.57rem;
-    font-weight: 200;
-    color: #fff;
-    background: #69d;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow:
-    inset -3px -3px 3px #1115,
-    inset 3px 3px 3px #fff5;
-    transition: all .3s;
-}
-#copyUrl:active {
-    color: #111;
-    box-shadow:
-    0 0 0 #1115,
-    0 0 0 #fff5,
-    inset 3px 3px 17px #1118;
-}
-
-footer {
-    background: light-dark(#333, #1f1f1f);
-    bottom: 0;
-}
-footer hr {
-    max-width: 400px;
-    margin: 15px auto;
-}
-footer h1 {
-    margin-block: 15px;
-}
-.link {
-    text-align: left;
-    max-width: 400px;
-    margin: auto;
-}
-
-header, footer {
-    padding: 1rem;
-    color: #fff;
-}
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 100;
-}
-h1 img {
-    display: block;
-    margin-right: 10px;
-    width: 1lh;
-    height: 1lh;
-    filter: drop-shadow(0 0 3px #fff5);
-    rotate: -10deg;
-}
-.icon {
-    width: 150px;
-    height: 150px;
-    filter: drop-shadow(0 0 7px light-dark(#1115, #fff5));
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-h2 {
-    font-size: 2rem;
-}
-h3 {
-    margin: 10px;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #07f;
-}
-p, a, li {
-    font-size: 1.2rem;
-}
-small {
-    font-size: 1rem;
-}
-hr {
-    border: none;
-    border-top: 2px solid #888;
-    margin-block: 15px;
-}
-a {
-    color: #07f;
-}
-strong {
-    font-weight: 700;
-}
-.bold-text {
-    display: inline;
-    font-weight: 700;
-    color: light-dark(#225, #aae);
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.33rem;
-}
-
-@media (max-width: 767px) {
-    .max {
-        max-width: 230px;
-    }
-    .about-me {
-        max-width: 210px;
-    }
-    footer hr {
-        max-width: 280px;
-    }
-    .link {
-        max-width: 230px;
-    }
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="keto's official profile site.">
+    <meta name="keywords" content="keto21,keto,KETO21,KETO,keto21f5si">
+    <meta name="author" content="keto">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="Ar-U6JNbcoH49_c-X5R7LR2N69nug_r32dcZOyqYM_s">
+    <meta property="og:url" content="https://keto21.f5.si/">
+    <meta property="og:title" content="HOME / keto">
+    <meta property="og:description" content="keto’s official profile site.">
+    <meta property="og:site_name" content="HOME / keto">
+    <meta property="og:image" content="./images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="any" href="./images/icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icon.png">
+    <title>HOME / keto (official)</title>
+</head>
+<body id="top">
+    <header>
+        <h1><img src="./images/image.svg" alt="head">HOME / keto</h1>
+    </header>
+    <main>
+        <img src="./images/icon.svg" alt="icon" class="icon">
+        <h2>Welcome to my profile site.</h2>
+        <div class="content">
+            <h3>About me</h3>
+            <p>
+                名前: keto（読み方: けーと）<br>
+                年齢: 15<br>
+                血液型: A型<br>
+                趣味: Webデザイン, Scratch<br>
+                将来の夢: プログラマー
+            </p>
+            <p>
+                Scratchでゲームを作ったり、HTML, CSS, JavaScriptの勉強をしたりしています。<br>
+                今後はC#とBlenderとUnityの勉強もしたいと考えています。
+            </p>
+            <hr><h3>Skill</h3>
+            <div class="skill">
+                <section>
+                    <h3>Scratch</h3>
+                    <p class="bold-text">
+                        Lv. 3/5
+                    </p>
+                    <p>
+                        主にアクションゲームを制作しており、変数の使い方などが理解できています。最近は、3Dレンダリングの基礎について理解することを目標としてます。
+                    </p>
+                </section>
+                <section>
+                    <h3>HTML/CSS</h3>
+                    <p class="bold-text">
+                        Lv. 3/5
+                    </p>
+                    <p>
+                        勉強して身に付けたさまざまなHTML要素やボックスモデル、背景色などの基本的な知識で簡単なWebページを作れるようになりました。（<a href="https://github.com/keto21f5si/my-profile">プロフィールサイト</a>）
+                    </p>
+                </section>
+                <section>
+                    <h3>JavaScript</h3>
+                    <p class="bold-text">
+                        Lv. 3/5
+                    </p>
+                    <p>
+                        変数、条件処理、反復処理、関数など基本的な知識を身につけて<a href="https://github.com/keto21f5si/todolist">ToDoリスト</a>を作りました。Node.jsも少しだけ使えるようになりました。
+                    </p>
+                </section>
+                <section>
+                    <h3>作ったもの: 1</h3>
+                    <p>
+                        <a href="https://github.com/keto21f5si/my-profile">My Profile</a>と<a href="https://github.com/keto21f5si/todolist">ToDoリスト</a><br>
+                        HTML, CSS, JavaScriptの基本的な知識を使って作りました。ToDoリストはデータを保存する機能があるので、実用性はあります。
+                    </p>
+                </section>
+                <section>
+                    <h3>作ったもの: 2</h3>
+                    <p>
+                        <a href="https://github.com/keto21f5si/MyBlog">My Blog</a><br>
+                        これも同様に、HTML, CSS, JavaScriptの基本的な知識で作りました。Markdownの記事をHTMLに変換して表示しています。
+                    </p>
+                </section>
+                <section>
+                    <h3>作ったもの: 3</h3>
+                    <p>
+                        <a href="https://github.com/keto21f5si/chatroom">ChatRoom</a><br>
+                        Node.jsを使って開発しました。短くコードを組むためにExpress、リアルタイムにするためにSocket.IO、開発しやすくするためにnodemonというパッケージを使いました。
+                    </p>
+                </section>
+            </div>
+            <h3>Links</h3>
+            <ul class="links">
+                <li><a href="#top">Go Top.</a></li>
+                <li><a href="https://ch.keto21.f5.si/">チャットルーム</a></li>
+                <li><a href="https://blog.keto21.f5.si/">ブログ</a></li>
+                <li><a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">もちたろうさんのリクエスト</a></li>
+                <li><a href="line://msg/text/https://keto21.f5.si/">LINEで共有</a></li>
+            </ul>
+            <button type="button" id="copyUrl">Copy URL</button>
+        </div>
+    </main>
+    <footer>
+        <small>
+            <h1><img src="./images/icon.svg" alt="icon">HOME / keto</h1>
+            <p class="link">
+                <strong>[ Follow me ]</strong><br>
+                <a href="https://github.com/keto21f5si/">GitHub</a> , 
+                <a href="https://scratch.mit.edu/users/keto21/">Scratch</a>
+            </p>
+            <hr>
+            Created by keto.<br>
+            Hosted by Cloudflare Pages.<br>
+            All rights reserved.<br>
+            Copyright &copy; keto
+        </small>
+    </footer>
+    <script>
+        const copyUrl = document.querySelector("#copyUrl");
+        copyUrl.addEventListener("click", ()=> {
+            navigator.clipboard.writeText("https://keto21.f5.si/");
+            copyUrl.textContent = "Copied!";
+            setTimeout(()=> {
+                copyUrl.textContent = "Copy URL";
+            }, 1000);
+        });
+    </script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js").then(function(registration) {}, function(err) {});
+            });
+        }
+    </script>
+</body>
+</html>
