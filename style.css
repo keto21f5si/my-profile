@@ -1,12 +1,10 @@
 @charset "utf-8";
+
 * {
     padding: 0;
     margin: 0;
     font-weight: 400;
     scroll-behavior: smooth;
-}
-:root {
-    color-scheme: light dark;
 }
 body {
     -webkit-text-size-adjust: 100%;
@@ -14,8 +12,8 @@ body {
     overflow-x: hidden;
     overflow-wrap: anywhere;
     text-align: center;
-    background: light-dark(#f5f5f5, #111);
-    color: light-dark(#111, #fff);
+    background: #f5f5f5;
+    color: #111;
     line-height: 1.3;
 }
 
@@ -28,8 +26,7 @@ header {
     inset 0 0 5px #000,
     inset 8px 8px 0 #272727,
     inset -8px -8px 0 #272727,
-    0 0 10px #000a
-    ;
+    0 0 10px #000a;
 }
 header h1 {
     color: #fff;
@@ -56,7 +53,7 @@ main {
     max-width: 250px;
     padding: 10px;
     padding-left: 20px;
-    background: light-dark(#333, #222);
+    background: #333;
     list-style: none;
     border-radius: 10px;
     box-shadow: 2px 3px 10px #1118;
@@ -74,7 +71,7 @@ main {
     gap: 30px;
 }
 .skill section {
-    background: light-dark(#fff, #1f1f1f);
+    background: #fff;
     box-shadow: 2px 3px 7px #1115;
     padding: 10px;
     border-radius: 10px;
@@ -92,25 +89,23 @@ main {
     font-size: 1.57rem;
     font-weight: 200;
     color: #111;
-    background: #eee;
+    background: #f5f5f5;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     box-shadow:
-    -3px -3px 3px #1113,
-    3px 3px 3px #fff5,
     inset -3px -3px 3px #1115,
     inset 3px 3px 3px #fff;
-    transition: all .1s;
+    transition: all .2s;
 }
-#copyUrl:active {
+#copyUrl:hover {
     color: #555;
     box-shadow: inset 3px 3px 17px #1118;
 }
 
 footer {
-    background: light-dark(#333, #1f1f1f);
+    background: #333;
     bottom: 0;
 }
 footer hr {
@@ -182,7 +177,7 @@ strong {
 .bold-text {
     display: inline;
     font-weight: 700;
-    color: light-dark(#225, #aae);
+    color: #225;
     text-align: center;
     text-decoration: underline;
     font-size: 1.33rem;
