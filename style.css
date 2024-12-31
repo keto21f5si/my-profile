@@ -99,9 +99,9 @@ main {
     inset 3px 3px 3px #fff;
     transition: all .2s;
 }
-#copyUrl:hover {
+#copyUrl:active {
     color: #555;
-    box-shadow: inset 3px 3px 17px #1118;
+    box-shadow: inset 2px 2px 7px #1115;
 }
 
 footer {
