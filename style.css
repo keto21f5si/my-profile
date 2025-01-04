@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
     overflow-wrap: anywhere;
     text-align: center;
-    background: #f5f5f5;
+    background: #f0f0f0;
     color: #111;
     line-height: 1.3;
 }
@@ -21,12 +21,6 @@ header {
     padding: .5rem;
     background: #333;
     top: 0;
-    border-radius: 0 0 7px 7px;
-    box-shadow:
-    inset 0 0 5px #000,
-    inset 8px 8px 0 #272727,
-    inset -8px -8px 0 #272727,
-    0 0 10px #000a;
 }
 header h1 {
     color: #fff;
@@ -49,19 +43,6 @@ main {
     margin-block: 10px;
     line-height: 1.7;
 }
-.links {
-    max-width: 250px;
-    padding: 10px;
-    padding-left: 20px;
-    background: #333;
-    list-style: none;
-    border-radius: 10px;
-    box-shadow: 2px 3px 10px #1118;
-}
-.links li::before {
-    content: "keto~ $ ";
-    color: #1e1;
-}
 .skill {
     margin: auto;
     max-width: 1050px;
@@ -70,9 +51,12 @@ main {
     justify-content: center;
     gap: 30px;
 }
-.skill section {
-    background: #fff;
-    box-shadow: 2px 3px 7px #1115;
+.links, .skill section {
+    background: #f0f0f0;
+    box-shadow:
+    5px 5px 8px #fff,
+    -5px -5px 8px #0001,
+    inset 3px 3px 5px #1115;
     padding: 10px;
     border-radius: 10px;
     flex: 1 1 calc((100% / 3) - 40px);
@@ -81,15 +65,38 @@ main {
     min-height: 300px;
     transition: .3s;
 }
-.skill section:hover {
-    scale: 1.05;
+.skill section:hover, .links:hover {
+    translate: 0 -10px;
+    box-shadow:
+    0 0 0 #fff,
+    inset 3px 3px 5px #fff,
+    5px 5px 8px #0001,
+    inset -3px -3px 5px #1115;
+}
+.links {
+    list-style: none;
+}
+.links li::before {
+    content: "#";
+    color: #111;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.lv {
+    margin: auto;
+    font-size: 1.3rem;
+    font-family: Courier, Monospace;
+}
+.lv span {
+    color: #337;
 }
 #copyUrl {
     margin: 20px;
     font-size: 1.57rem;
     font-weight: 200;
     color: #111;
-    background: #f5f5f5;
+    background: #f0f0f0;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -99,7 +106,7 @@ main {
     inset 3px 3px 3px #fff;
     transition: all .2s;
 }
-#copyUrl:active {
+#copyUrl:hover {
     color: #555;
     box-shadow: inset 2px 2px 7px #1115;
 }
@@ -177,7 +184,6 @@ strong {
 .bold-text {
     display: inline;
     font-weight: 700;
-    color: #225;
     text-align: center;
     text-decoration: underline;
     font-size: 1.33rem;
