@@ -18,12 +18,12 @@ body {
 }
 
 header {
-    padding: .5rem;
-    background: #333;
+    background: linear-gradient(30deg, #111, #333);
+    color: #fff;
     top: 0;
 }
 header h1 {
-    color: #fff;
+    margin: .3rem;
     text-decoration: underline;
 }
 
@@ -63,10 +63,8 @@ main {
     min-width: 250px;
     max-width: 400px;
     min-height: 300px;
-    transition: .3s;
 }
 .skill section:hover, .links:hover {
-    translate: 0 -10px;
     box-shadow:
     0 0 0 #fff,
     inset 3px 3px 5px #fff,
