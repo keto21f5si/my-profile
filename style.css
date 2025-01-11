@@ -54,9 +54,10 @@ main {
 .links, .skill section {
     background: #f0f0f0;
     box-shadow:
-    5px 5px 8px #fff,
-    -5px -5px 8px #0001,
-    inset 3px 3px 5px #1115;
+    0 0 0 #fff,
+    inset 3px 3px 5px #fff,
+    5px 5px 8px #0001,
+    inset -3px -3px 5px #1115;
     padding: 10px;
     border-radius: 10px;
     flex: 1 1 calc((100% / 3) - 40px);
@@ -66,10 +67,9 @@ main {
 }
 .skill section:hover, .links:hover {
     box-shadow:
-    0 0 0 #fff,
-    inset 3px 3px 5px #fff,
-    5px 5px 8px #0001,
-    inset -3px -3px 5px #1115;
+    5px 5px 8px #fff,
+    -5px -5px 8px #0001,
+    inset 3px 3px 5px #1115;
 }
 .links {
     list-style: none;
