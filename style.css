@@ -22,7 +22,7 @@ header {
     top: 0;
 }
 header h1 {
-    margin: .3rem;
+    margin: .5rem;
     font-weight: 800;
     color: #eee;
     text-shadow:
@@ -33,6 +33,12 @@ header h1 {
 main {
     padding: 50px;
     margin: auto;
+}
+.welcome {
+    padding-block: 30px;
+    font-weight: 700;
+    font-size: 2.3rem;
+    font-family: arial, system-ui;
 }
 .content {
     border-top: 2px solid #888;
@@ -96,16 +102,13 @@ main {
     margin: 20px;
     font-size: 1.57rem;
     font-weight: 700;
-    color: #053;
-    background: linear-gradient(60deg, #5f4, #0df);
-    border: none;
+    border: 3px solid #111;
+    background: #0000;
+    color: #111;
     padding: 10px;
     padding-inline: 15px;
     cursor: pointer;
     border-radius: 7px;
-    box-shadow:
-    inset -3px -3px 5px #1117,
-    inset 3px 3px 5px #fffa;
     transition: all .3s;
 }
 #copyUrl:hover {
@@ -160,7 +163,7 @@ h2 {
     font-size: 2rem;
 }
 h3 {
-    margin: 10px;
+    margin: 27px;
     font-size: 1.7rem;
     font-weight: 700;
     color: #07f;
