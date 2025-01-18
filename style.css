@@ -113,6 +113,7 @@ main {
 }
 #copyUrl:hover {
     text-decoration: underline;
+    opacity: .5;
 }
 
 footer {
