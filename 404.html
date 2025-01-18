@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="keto">
@@ -19,8 +19,8 @@
         <img src="./images/icon.svg" alt="icon" class="icon">
         <h2>Welcome to my profile site.</h2>
         <div class="content">
-            <h3>404 Page Not Found.</h3>
-            <p>道に迷ったようですね。<br><a href="https://keto21.f5.si/">ホーム</a>に戻ってみてください！</p>
+            <h3>ページが見つかりません。</h3>
+            <a href="https://keto21.f5.si/">Go My Home Page</a>
         </div>
     </main>
     <footer>
@@ -38,16 +38,6 @@
             Copyright &copy; keto
         </small>
     </footer>
-    <script>
-        const copyUrl = document.querySelector("#copyUrl");
-        copyUrl.addEventListener("click", ()=> {
-            navigator.clipboard.writeText("https://keto21.f5.si/");
-            copyUrl.textContent = "Copied!";
-            setTimeout(()=> {
-                copyUrl.textContent = "Copy URL";
-            }, 1000);
-        });
-    </script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
